@@ -10,7 +10,14 @@ const findById = async (id) => {
   return product;
 };
 
+const createProduct = async (product) => {
+  const newProduct = await productsModel.create(product);
+  return { type: null, message: newProduct };
+  // return newProduct;
+};
+
 module.exports = {
   productsAll,
   findById,
+  createProduct,
 };
