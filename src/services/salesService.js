@@ -16,7 +16,6 @@ const getSales = async () => {
 };
 
 const getSalesId = async (id) => {
-  console.log('service');
   const sale = await saleModel.getSalesId(id);
   return sale;
 };

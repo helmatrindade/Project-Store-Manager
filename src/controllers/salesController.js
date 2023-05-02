@@ -6,7 +6,6 @@ const getSales = async (_req, res) => {
 };
 
 const getSalesId = async (req, res) => {
-  console.log('contrroll');
   const { id } = req.params;
   const saleIdResult = await salesService.getSalesId(Number(id));
 

@@ -15,8 +15,20 @@ const createProduct = async (product) => {
   return { type: null, message: newProduct };
 };
 
+const upDateById = async (pruductId, name) => {
+  const id = await productsModel.findById(pruductId);
+
+  if (id === undefined) {
+    return { type: 'error' };
+  }
+
+  await productsModel.upDateById(pruductId, name);
+  return { type: null };
+};
+
 module.exports = {
   productsAll,
   findById,
   createProduct,
+  upDateById,
 };

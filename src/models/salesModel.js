@@ -36,7 +36,6 @@ const getSales = async () => {
 };
 
 const getSalesId = async (id) => {
-  console.log('model');
   const [salesId] = await connection.execute(
     `SELECT sale.date, saleProduct.product_id, saleProduct.quantity FROM StoreManager.sales AS sale
     JOIN StoreManager.sales_products AS saleProduct
@@ -44,7 +43,6 @@ const getSalesId = async (id) => {
     WHERE id = ?;`,
     [id],
   );
-  console.log(salesId);
   return camelize(salesId);
 };
 
