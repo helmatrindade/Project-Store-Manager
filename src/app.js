@@ -28,6 +28,8 @@ app.put('/products/:id', validateProduct, productsController.upDateById);
 
 app.delete('/products/:id', productsController.deleteProductById);
 
+app.delete('/sales/:id', salesController.deleteSalesById);
+
 // não remova essa exportação, é para o avaliador funcionar
 // você pode registrar suas rotas normalmente, como o exemplo acima
 // você deve usar o arquivo index.js para executar sua aplicação 
