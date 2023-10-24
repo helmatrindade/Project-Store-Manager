@@ -60,7 +60,7 @@ Neste projeto, minhas contribuições incluem:
    1. `GET /products` para recuperar informações dos produtos.
    2. `GET /products/:id` para recuperar apenas o produto com o id presente na URL que será retornado.
    3. `POST /products` para cadastrar produtos.
-   4. `PUT //products/:id` para atualizar um produto.
+   4. `PUT /products/:id` para atualizar um produto.
    5. `DELETE /products/:id` para deletar produtos por id.
    6. `GET /sales` para recuperar as vendas.
    7. `GET /sales/:id` para recuperar as vendas pelo id.
