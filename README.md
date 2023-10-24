@@ -46,6 +46,32 @@ env $(cat .env) npm start
 - Coloque `env $(cat .env)` antes de qualquer comando que for executar, por exemplo:
 </details>
 
+<details>
+ <summary>🤗 Minhas Contribuições</summary>
+ <br>
+ 
+Neste projeto, minhas contribuições incluem:
+
+- Desenvolvimento do modelo `connection` em `src/models/connection.js` com as propriedades corretas.
+- Desenvolvimento do modelo `products` em `src/models/productsModel.js` com as propriedades corretas.
+- Desenvolvimento do modelo `sales` em `src/models/salesModel.js` com as propriedades corretas.
+ 
+ - Implementação dos endpoints da API:
+   1. `GET /products` para recuperar informações dos produtos.
+   2. `GET /products/:id` para recuperar apenas o produto com o id presente na URL que será retornado.
+   3. `POST /products` para cadastrar produtos.
+   4. `PUT //products/:id` para atualizar um produto.
+   5. `DELETE /products/:id` para deletar produtos por id.
+   6. `GET /sales` para recuperar as vendas.
+   7. `GET /sales/:id` para recuperar as vendas pelo id.
+   8. `DELETE /sales/:id` para deletar a venda pelo id.
+   
+- Implementação de testes de cobertura nas camadas `models`, `services` e `controllers` em `src/tests/unit`.
+
+Essas contribuições representam minha parcela de trabalho neste projeto. Obrigada por conferir o projeto!
+   
+ </details>
+
 ### 🙋‍♀️  Autor
 
 - [@helmatrindade](https://github.com/helmatrindade)
